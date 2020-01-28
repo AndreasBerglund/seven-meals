@@ -1,0 +1,61 @@
+{   
+    "meals" : [
+
+        {
+            "name" : "Boller i karry",
+            "short": "En klassiker",
+            "kitchen" : "Dansk",
+            "url" : "https://www.dk-kogebogen.dk/opskrifter/24930/boller-i-karry"
+        },
+        {
+            "name" : "Pad thai",
+            "short": "Østens perle",
+            "kitchen": "Thailand",
+            "url" : "https://www.valdemarsro.dk/pad-thai/"
+        },
+        {
+            "name" : "Lasagne",
+            "short": "lagkage med oksekød og ost",
+            "kitchen": "Italien",
+            "url" : "https://www.valdemarsro.dk/lasagne/"
+        },
+        {
+            "name" : "Frikadeller",
+            "short": "Gris med kartofler og sovs",
+            "kitchen": "Danmark",
+            "url" : "https://www.valdemarsro.dk/frikadeller/"
+        },
+        {
+            "name" : "Spaghetti med kødsovs",
+            "short": "Danmarks nationalret numero uno",
+            "kitchen": "Danmark/Italien",
+            "url" : "https://www.valdemarsro.dk/spaghetti-bolognese/"
+        },        
+        {
+            "name" : "Laksebøffer",
+            "short": "Laksebøffer - med pomfritter?",
+            "kitchen": "Danmark",
+            "url" : "https://www.valdemarsro.dk/laks-smoersauce/"
+        },        
+        {
+            "name" : "Burger",
+            "short": "Burgere - med pomfritter?",
+            "kitchen": "USA",
+            "url" : "https://www.valdemarsro.dk/burger/"
+        },        
+        {
+            "name" : "Wok med kylling",
+            "short": "Wok",
+            "kitchen": "Kina",
+            "url" : "https://www.valdemarsro.dk/wok-med-kylling/"
+        },        
+        {
+            "name" : "Pizza",
+            "short": "Pizza måske med færdiglavede bunde",
+            "kitchen": "Italien",
+            "url" : "https://www.valdemarsro.dk/pizza/"
+        }
+
+    ]
+}
+
