@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <title>Meal deal</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <h1>Genopfrisk for at se hvad du skal have til aftensmad i denne uge</h1>
+    <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+
+        <div class="weekend day"></div>
+        <div class="weekend day"></div>
+    </div>
+
+    <script>
+        (function($){
+         
+            var meals; 
+
+            $.getJSON('meals.json', function(data) {
+            
+       
+                
+            }).done(function(data){
+
+                meals = data.meals;
+              
+                $('.day').each(function(){
+
+                    var random = Math.floor( Math.random() * meals.length);
+                    console.log(random, meals)
+                    
+                    $(this).text( meals[random].name );
+
+                    meals.splice(random, 1);
+                });
+            });
+      
+        })(jQuery);
+    
+    </script>
+
+</body>
