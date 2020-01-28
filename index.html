@@ -1,20 +1,66 @@
 <!DOCTYPE html>
 <head>
+    <meta charset="utf-8">
     <title>Meal deal</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-    <h1>Genopfrisk for at se hvad du skal have til aftensmad i denne uge</h1>
+    <div class="mmm">
+        <h1>7 måltider </h1>
+  </div>
     <div class="week">
-        <div class="day"></div>
-        <div class="day"></div>
-        <div class="day"></div>
-        <div class="day"></div>
-        <div class="day"></div>
+        <div class="day">
+            <a class="url" target="_blank">
+                <div class="kitchen"></div>
+                <div class="name"></div>  
+                <div class="short"></div>
+            </a>
+        </div>
+        <div class="day">
+            <a class="url" target="_blank">
+                <div class="kitchen"></div>
+                <div class="name"></div>  
+                <div class="short"></div>
+            </a>
+        </div>
+        <div class="day">
+            <a class="url" target="_blank">
+                <div class="kitchen"></div>
+                <div class="name"></div>  
+                <div class="short"></div>
+            </a>
+        </div>
+        <div class="day">
+            <a class="url" target="_blank">
+                <div class="kitchen"></div>
+                <div class="name"></div>  
+                <div class="short"></div>
+            </a>
+        </div>
+        <div class="day">
+            <a class="url" target="_blank">
+                <div class="kitchen"></div>
+                <div class="name"></div>  
+                <div class="short"></div>
+            </a>
+        </div>
+        <div class="day">
+            <a class="url" target="_blank">
+                <div class="kitchen"></div>
+                <div class="name"></div>  
+                <div class="short"></div>
+            </a>
+        </div>
+        <div class="day">
+            <a class="url" target="_blank">
+                <div class="kitchen"></div>
+                <div class="name"></div>  
+                <div class="short"></div>
+            </a>
+        </div>
 
-        <div class="weekend day"></div>
-        <div class="weekend day"></div>
+        
     </div>
 
     <script>
@@ -35,7 +81,10 @@
                     var random = Math.floor( Math.random() * meals.length);
                     console.log(random, meals)
                     
-                    $(this).text( meals[random].name );
+                    $(this).find('.name').text( meals[random].name );
+                    $(this).find('.short').text( meals[random].short );
+                    $(this).find('.kitchen').text( meals[random].kitchen );
+                    $(this).find('.url').attr( 'href',  meals[random].url );
 
                     meals.splice(random, 1);
                 });

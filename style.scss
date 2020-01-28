@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fffbe6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.mmm {
+    text-align: center;
+    padding: 2rem;
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: brown;
+        margin: 0;
+    }
+}
+
+.week {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: .5rem;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        .day {
+            margin: 1rem 0;
+        }
+    }
+  
+    //flex-wrap: wrap;
+    .day {
+        //background: red;
+       
+        .url {
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            margin: .25rem;
+            height: 100%;
+            text-align: center;
+            color: black;
+            text-decoration: none;
+            position: relative;
+
+            .name {
+                font-weight: 600;
+                font-size: 1.5rem;
+                margin: 1rem;
+            }
+            .kitchen {
+                font-size: 10px; text-transform: uppercase;
+                margin: .5rem;
+                opacity: .6;
+            }
+            .short {
+                padding: 0;
+                max-width: 200px;
+                margin-bottom: 1rem;
+            }
+
+            &:after {
+                content:"Mandag";
+                font-size: 15px;
+                background: #fffbe6;
+                padding: 0 4px ;
+                position: absolute;left: 50%; transform: translateX(-50%); top: -9px;
+            }
+      
+        }
+
+        &:nth-child(1) {
+            .url:after {
+                content: "Mandag";
+            }
+        }
+        &:nth-child(2) {
+            .url:after {
+                content: "Tirsdag";
+            }
+        }
+        &:nth-child(3) {
+            .url:after {
+                content: "Onsdag";
+            }
+        }
+        &:nth-child(4) {
+            .url:after {
+                content: "Torsdag";
+            }
+        }
+        &:nth-child(5) {
+            .url:after {
+                content: "Fredag";
+            }
+        }
+        &:nth-child(6) {
+            .url:after {
+                content: "Lørdag";
+            }
+        }
+        &:nth-child(7) {
+            .url:after {
+                content: "Søndag";
+            }
+        }
+    }
+}
