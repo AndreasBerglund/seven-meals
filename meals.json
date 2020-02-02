@@ -54,7 +54,26 @@
             "short": "Pizza måske med færdiglavede bunde",
             "kitchen": "Italien",
             "url" : "https://www.valdemarsro.dk/pizza/"
+        },
+        {
+            "name" : "Tærte",
+            "short": "Kartoffel og bacon",
+            "kitchen": "Danmark",
+            "url" : "https://www.valdemarsro.dk/kartoffel-og-bacon-taerte/"
+        },
+        {
+            "name" : "Pitabrød",
+            "short": "Med falafel",
+            "kitchen": "Persien",
+            "url" : "https://www.valdemarsro.dk/pitabroed/"
+        },
+        {
+            "name" : "Spaghetti med pesto og laks",
+            "short": "Med laks",
+            "kitchen": "Italien",
+            "url" : "https://meny.dk/opskrift/stegt-laks-og-cremet-pasta-pesto-og-sommergroent"
         }
+        
 
     ]
 }
